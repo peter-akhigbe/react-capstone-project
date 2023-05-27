@@ -31,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-## 📖 BookStore <a name="about-project"></a>
+## 📖 Emoji Info Website <a name="about-project"></a>
 
 A simple Emoji Info Website project.
 
@@ -144,7 +144,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse curriculum.
+I would like to thank the Microverse curriculum and [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio/), the creator of this awesome design.
 
 <!-- FAQ (optional) -->
 
