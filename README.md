@@ -63,7 +63,7 @@ A simple Emoji Info Website project.
 ## 🚀 Live Demo & Presentation <a name="live-demo"></a>
 
 - [Live Demo Link](https://react-capstone-emoji-website.onrender.com/)
-- [Presentation Link](https://www.loom.com/share/0d6b0f70c8ec4083b5c092a1c414c552/)
+- [Presentation Link](https://www.loom.com/share/9160a415adce4194aad87711bad7f15e/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
