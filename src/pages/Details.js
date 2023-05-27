@@ -8,32 +8,30 @@ const Details = () => {
 
   return (
     <div className="details-container">
-      <h1><Link to="/">Emojis</Link></h1>
+      <nav className="details-nav">
+        <div className="details-arrow"><Link to="/">{'<'}</Link></div>
+        <h1 className="details-h1"><Link to="/">Emojis</Link></h1>
+      </nav>
       <ul className="details-list">
         <li>
-          Name:
-          {' '}
-          {emojis[key - 1].name}
+          <div>Name:</div>
+          <div>{emojis[key - 1].name}</div>
         </li>
         <li>
-          Category:
-          {' '}
-          {emojis[key - 1].category}
+          <div>Description:</div>
+          <div>{emojis[key - 1].category}</div>
         </li>
         <li>
-          Group:
-          {' '}
-          {emojis[key - 1].group}
+          <div>Description:</div>
+          <div>{emojis[key - 1].group}</div>
         </li>
         <li>
-          htmlCode:
-          {' '}
-          {emojis[key - 1].htmlCode[0]}
+          <div>htmlCode:</div>
+          <div>{emojis[key - 1].htmlCode[0]}</div>
         </li>
         <li>
-          unicode:
-          {' '}
-          {emojis[key - 1].unicode[0]}
+          <div>unicode:</div>
+          <div>{emojis[key - 1].unicode[0]}</div>
         </li>
       </ul>
     </div>

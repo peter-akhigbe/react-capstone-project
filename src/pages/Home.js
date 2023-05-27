@@ -21,7 +21,9 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1>Emojis</h1>
+      <h1>
+        <Link to="/">Emojis</Link>
+      </h1>
 
       <input
         type="text"
@@ -30,15 +32,16 @@ const Home = () => {
         onChange={handleSearch}
       />
 
+      <div className="image-container">
+        {null}
+      </div>
+
       <ul className="emoji-container">
         {filteredEmojis.map((emoji) => {
           const { id } = emoji;
           return (
             <Link key={id} to={`/emoji/${id}`}>
-              <li className="emoji">
-                {emoji.name}
-              </li>
-
+              <li className="emoji">{emoji.name}</li>
             </Link>
           );
         })}
