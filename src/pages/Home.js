@@ -34,9 +34,12 @@ const Home = () => {
         {filteredEmojis.map((emoji) => {
           const { id } = emoji;
           return (
-            <li className="emoji" key={id}>
-              <Link to={`/emoji/${id}`}>{emoji.name}</Link>
-            </li>
+            <Link key={id} to={`/emoji/${id}`}>
+              <li className="emoji">
+                {emoji.name}
+              </li>
+
+            </Link>
           );
         })}
       </ul>
