@@ -1,0 +1,88 @@
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d24379;
+  color: white;
+}
+
+body {
+  margin: 10px 5px;
+}
+
+/* Home Page */
+.home-container,
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+}
+
+.image-container {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  background-image: url('./images/emoji.png');
+  background-size: cover;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.emoji {
+  padding: 100px 20px;
+  height: 100px;
+  border: 1px solid #c4356c;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.emoji-container-1 li:nth-child(even) .emoji,
+.emoji-container-2 li:nth-child(odd) .emoji {
+  background-color: #d44e7d;
+}
+
+/* Deatils Page */
+.details-list li {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+.details-list li:nth-child(even),
+.details-list li:nth-child(even) div {
+  background-color: #d44e7d;
+}
+
+.details-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-arrow {
+  position: absolute;
+  left: 1vw;
+  font-size: 30px;
+  font-weight: 100;
+}
