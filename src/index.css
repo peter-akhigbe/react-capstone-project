@@ -42,7 +42,7 @@ input {
   background-size: cover;
 }
 
-.emoji-container {
+.box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -54,6 +54,11 @@ input {
   display: flex;
   align-items: center;
   font-size: 30px;
+}
+
+.emoji-container-1 li:nth-child(even) .emoji,
+.emoji-container-2 li:nth-child(odd) .emoji {
+  background-color: #d44e7d;
 }
 
 /* Deatils Page */

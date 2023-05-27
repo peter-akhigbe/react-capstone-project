@@ -36,18 +36,41 @@ const Home = () => {
         {null}
       </div>
 
-      <ul className="emoji-container">
-        {filteredEmojis.map((emoji) => {
-          const { id } = emoji;
-          return (
-            <li key={id}>
-              <Link to={`/emoji/${id}`}>
-                <div className="emoji">{emoji.name}</div>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="box">
+        <ul className="emoji-container-1">
+          {filteredEmojis.map((emoji) => {
+            const { id } = emoji;
+            return (
+              <>
+                {id <= 50 ? (
+                  <li key={id}>
+                    <Link to={`/emoji/${id}`}>
+                      <div className="emoji">{emoji.name}</div>
+                    </Link>
+                  </li>
+                ) : null}
+              </>
+            );
+          })}
+        </ul>
+
+        <ul className="emoji-container-2">
+          {filteredEmojis.map((emoji) => {
+            const { id } = emoji;
+            return (
+              <>
+                {id >= 51 ? (
+                  <li key={id}>
+                    <Link to={`/emoji/${id}`}>
+                      <div className="emoji">{emoji.name}</div>
+                    </Link>
+                  </li>
+                ) : null}
+              </>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };
