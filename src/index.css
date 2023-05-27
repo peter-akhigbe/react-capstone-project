@@ -64,7 +64,8 @@ input {
   font-size: 30px;
 }
 
-.details-list li:nth-child(even) {
+.details-list li:nth-child(even),
+.details-list li:nth-child(even) div {
   background-color: #d44e7d;
 }
 
